@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTube with To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>FocusTube</h1>
+    </header>
+
+    <main>
+      <!-- YouTube Video Section -->
+      <section class="input-section">
+        <input type="text" id="youtube-url" placeholder="Paste YouTube URL here..." />
+        <button id="load-video">Load Video</button>
+      </section>
+
+      <section class="video-section">
+        <div id="video-container">
+          <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <!-- Notes Section -->
+      <section class="notes-section">
+        <textarea id="notes" placeholder="Take notes here..."></textarea>
+        <button id="save-notes">Save Notes</button>
+        <button id="clear-notes">Clear Notes</button>
+      </section>
+
+      <section class="saved-notes">
+        <h2>Saved Notes</h2>
+        <ul id="notes-list"></ul>
+      </section>
+
+      <!-- To-Do App Section -->
+      <section class="todo-section">
+        <h2>To-Do List</h2>
+        <div class="todo-input">
+          <input type="text" id="todo-input" placeholder="Add a new task..." />
+          <button id="add-todo">Add Task</button>
+        </div>
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
